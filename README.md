@@ -4,21 +4,35 @@
 
 **DTranNER** is a deep-learning-based method suited for biomedical named entity recognition that obtains state-of-the-art performance in NER on the four biomedical benchmark corpora (BC2GM, BC4CHEMD, BC5CDR, and NCBI-Diesease). **DTranNER** equips with label-label transition model to describe ever-changing relations between neighboring labels.
 
+## Updates
+*   **(3 July 2019)** A new version of DTranNER is now available. It is entirely renewed, based on Pytorch, with providing significant performance improvements over the scores on the submitted manuscript.
+
 ## Initial setup
 
-To use **DTranNER**, you need to install Python 2.7, with Numpy, Spacy, and Theano 1.0.0.
+To use **DTranNER**, you need to install Python 3.*, with Numpy, Spacy, gensim, and Pytorch v1.1.0
 
 ## Usage
-**To be updated**
+Download the specified word embedding (wikipedia-pubmed-and-PMC-w2v.bin) on [here](http://evexdb.org/pmresources/vec-space-models/) and put it under the directory `w2v` whose location is under the project-root directory. 
+```
+mkdir w2v
+mv wikipedia-pubmed-and-PMC-w2v.bin $PROJECT_HOME/w2v/
+```
 
 ## Model Training
 For model training, we recommend using GPU.
 ```
-./train_crf.py --character_model ['cnn' or 'lstm'] --lstm_hidden_dim [e.g. 800] --minibatch_size [e.g. 10] --gradient_threshold [e.g. 20] --dataset [target corpus] --cnn_case_sensitivity ['yes' or 'no'] --config_layer_normalization ['yes' or 'no'] --logging_label_prediction ['yes' or 'no']
+python train.py \
+    --DTranNER
+    --dataset_name ['BC5CDR','BC2GM','BC4CHEMD',or 'NCBI-disease'] \
+    --hidden_dim [e.g., 500] \
+    --pp_hidden_dim [e.g., 500] \
+    --bilinear_dim [e.g., 500] \
+    --pp_bilinear_pooling
+    --gpu [e.g., 0]
 ```
 
 ## Download Word Embedding
-We initialize the word embedding matrix with pre-trained word vectors from Pyysalo et al., 2013. These word vectors are
+We initialize the word embedding matrix with the pre-trained word vectors from Pyysalo et al., 2013. These word vectors are
 obtained from [here](http://evexdb.org/pmresources/vec-space-models/). They were trained using the PubMed abstracts, PubMed Central (PMC), and a Wikipedia dump. 
 
 ## Datasets 
