@@ -9,7 +9,7 @@
 
 ## Initial setup
 
-To use **DTranNER**, you need to install Python 3.*, with Numpy, Spacy, gensim, and Pytorch v1.1.0
+To use **DTranNER**, you need to install Python 3.*, with Pytorch v1.1.0, Numpy, Spacy, gensim, so on. Please refer to the ```requirement.txt```
 
 ## Usage
 Download the specified word embedding (wikipedia-pubmed-and-PMC-w2v.bin) on [here](http://evexdb.org/pmresources/vec-space-models/) and put it under the directory `w2v` whose location is under the project-root directory. 
@@ -30,6 +30,7 @@ python train.py \
     --pp_bilinear_pooling
     --gpu [e.g., 0]
 ```
+You can change the arguments as you want.
 
 ## Download Word Embedding
 We initialize the word embedding matrix with the pre-trained word vectors from Pyysalo et al., 2013. These word vectors are
@@ -41,3 +42,5 @@ We use four biomedical corpora collected by Crichton et al. The dataset is publi
 ## Tagging Scheme
 In this study, we use IOBES tagging scheme. `O` denotes non-entity token, `B` denotes the first token of such an entity consisting of multiple tokens, `I` denotes the inside token of the entity, `E` denotes the last token, and `S` denotes a single-token-based entity. We are conducting experiments with IOB tagging scheme at this moment. It will be reposed soon.
 
+## Contact
+Please post a Github issue or contact skhong831@kaist.ac.kr if you have any questions.
