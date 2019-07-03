@@ -12,23 +12,23 @@
 To use **DTranNER**, you need to install Python 3.*, with Numpy, Spacy, gensim, and Pytorch v1.1.0
 
 ## Usage
-Download the specified word embedding [here](http://evexdb.org/pmresources/vec-space-models/) and put it under the directory `w2v` whose location is under the project-root directory. 
+Download the specified word embedding (wikipedia-pubmed-and-PMC-w2v.bin) on [here](http://evexdb.org/pmresources/vec-space-models/) and put it under the directory `w2v` whose location is under the project-root directory. 
 ```
 mkdir w2v
-python run_ner.py \
-    --do_train=true \
-    --do_eval=true \
-    --vocab_file=$BIOBERT_DIR/vocab.txt \
-    --bert_config_file=$BIOBERT_DIR/bert_config.json \
-    --init_checkpoint=$BIOBERT_DIR/biobert_model.ckpt \
-    --num_train_epochs=10.0 \
-    --data_dir=$NER_DIR/ \
-    --output_dir=/tmp/bioner/
+mv wikipedia-pubmed-and-PMC-w2v.bin $PROJECT_HOME/w2v/
 ```
+
 ## Model Training
 For model training, we recommend using GPU.
 ```
-python train.py --dataset_name ['BC5CDR','BC2GM','BC4CHEMD',or 'NCBI-disease'] --DTranNER --hidden_dim [e.g., 500] --pp_hidden_dim [e.g., 500] --bilinear_dim [e.g., 500] --pp_bilinear_pooling
+python train.py \
+    --DTranNER
+    --dataset_name ['BC5CDR','BC2GM','BC4CHEMD',or 'NCBI-disease'] \
+    --hidden_dim [e.g., 500] \
+    --pp_hidden_dim [e.g., 500] \
+    --bilinear_dim [e.g., 500] \
+    --pp_bilinear_pooling
+    --gpu [e.g., 0]
 ```
 
 ## Download Word Embedding
