@@ -15,7 +15,7 @@ To use **DTranNER**, you need to install Python 3.*, with Pytorch v1.1.0, Numpy,
 Download the specified word embedding (wikipedia-pubmed-and-PMC-w2v.bin) on [here](http://evexdb.org/pmresources/vec-space-models/) and put it under the directory `w2v` whose location is under the project-root directory. 
 ```
 mkdir w2v
-mv wikipedia-pubmed-and-PMC-w2v.bin $PROJECT_HOME/w2v/
+mv wikipedia-pubmed-and-PMC-w2v.bin $PROJECT_ROOT/w2v/
 ```
 
 ## Model Training
@@ -37,7 +37,7 @@ We initialize the word embedding matrix with the pre-trained word vectors from P
 obtained from [here](http://evexdb.org/pmresources/vec-space-models/). They were trained using the PubMed abstracts, PubMed Central (PMC), and a Wikipedia dump. 
 
 ## Datasets 
-We use four biomedical corpora collected by Crichton et al. The dataset is publicly available and can be downloaded from [here](https://github.com/cambridgeltl/MTL-Bioinformatics-2016). In our implementation, the dataset is accessed via ```../data/```.
+We use four biomedical corpora collected by Crichton et al. The dataset is publicly available and can be downloaded from [here](https://github.com/cambridgeltl/MTL-Bioinformatics-2016). In our implementation, the datasets are accessed via ```$PROJECT_HOME/data/```.
 
 ## Tagging Scheme
 In this study, we use IOBES tagging scheme. `O` denotes non-entity token, `B` denotes the first token of such an entity consisting of multiple tokens, `I` denotes the inside token of the entity, `E` denotes the last token, and `S` denotes a single-token-based entity. We are conducting experiments with IOB tagging scheme at this moment. It will be reposed soon.
