@@ -9,7 +9,7 @@
 
 ## Initial setup
 
-To use **DTranNER**, you need to install Python 3.*, with Pytorch v1.1.0, Numpy, Spacy, gensim, so on. Please refer to the ```requirement.txt```
+To use **DTranNER**, you need to install Python 3.*, with pytorch v1.1.0, numpy, spacy, gensim, and etc. Please refer to the ```requirement.txt```
 
 ## Usage
 Download the specified word embedding (wikipedia-pubmed-and-PMC-w2v.bin) on [here](http://evexdb.org/pmresources/vec-space-models/) and put it under the directory `w2v` whose location is under the project-root directory. 
