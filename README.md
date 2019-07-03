@@ -2,17 +2,17 @@
 
 ## Biomedical Named Entity Recognizer
 
-**DTranNER** is a deep-learning-based method suited for biomedical named entity recognition that obtains state-of-the-art performance in NER on the four biomedical benchmark corpora (BC2GM, BC4CHEMD, BC5CDR, and NCBI-Diesease). **DTranNER** equips with label-label transition model to describe ever-changing relations between neighboring labels.
+**DTranNER** is a deep-learning-based method suited for biomedical named entity recognition that obtains state-of-the-art performance in NER on the four biomedical benchmark corpora (BC2GM, BC4CHEMD, BC5CDR, and NCBI-Diesease). **DTranNER** equips with deep learning-based label-label transition model to describe ever-changing contextual relations between neighboring labels.
 
 ## Updates
 *   **(3 July 2019)** A new version of DTranNER is now available. It is entirely renewed, based on Pytorch, with providing significant performance improvements over the scores on the submitted manuscript.
 
 ## Initial setup
 
-To use **DTranNER**, you need to install Python 3.*, with pytorch v1.1.0, numpy, spacy, gensim, and etc. Please refer to the ```requirement.txt```
+To use **DTranNER**, you are required to set up a python3-based environment with packages such as pytorch v1.1.0, numpy, spacy, gensim, and etc. Please refer to the ```requirement.txt```
 
 ## Usage
-Download the specified word embedding (wikipedia-pubmed-and-PMC-w2v.bin) on [here](http://evexdb.org/pmresources/vec-space-models/) and put it under the directory `w2v` whose location is under the project-root directory. 
+Download the specified word embedding (```wikipedia-pubmed-and-PMC-w2v.bin```) on [here](http://evexdb.org/pmresources/vec-space-models/) and put it under the directory `w2v` whose location is under the project-root directory. 
 ```
 mkdir w2v
 mv wikipedia-pubmed-and-PMC-w2v.bin $PROJECT_ROOT/w2v/
