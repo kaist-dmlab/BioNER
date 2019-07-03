@@ -37,7 +37,8 @@ We initialize the word embedding matrix with the pre-trained word vectors from P
 obtained from [here](http://evexdb.org/pmresources/vec-space-models/). They were trained using the PubMed abstracts, PubMed Central (PMC), and a Wikipedia dump. 
 
 ## Datasets 
-We use four biomedical corpora collected by Crichton et al. The dataset is publicly available and can be downloaded from [here](https://github.com/cambridgeltl/MTL-Bioinformatics-2016). In our implementation, the datasets are accessed via ```$PROJECT_HOME/data/```.
+The source of pre-processed datasets are from https://github.com/cambridgeltl/MTL-Bioinformatics-2016 and
+We use biomedical corpora collected by Crichton et al. The dataset is publicly available and can be downloaded from [here](https://github.com/cambridgeltl/MTL-Bioinformatics-2016). In our implementation, the datasets are accessed via ```$PROJECT_HOME/data/```. For details on NER datasets, please refer to **A Neural Network Multi-Task Learning Approach to Biomedical Named Entity Recognition (Crichton et al. 2017)**.
 
 ## Tagging Scheme
 In this study, we use IOBES tagging scheme. `O` denotes non-entity token, `B` denotes the first token of such an entity consisting of multiple tokens, `I` denotes the inside token of the entity, `E` denotes the last token, and `S` denotes a single-token-based entity. We are conducting experiments with IOB tagging scheme at this moment. It will be reposed soon.
