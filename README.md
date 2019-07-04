@@ -67,11 +67,11 @@ Here we compare our model with recent state-of-the-art models on the four biomed
 |Model | [BC2GM](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/BC2GM-IOBES) | [BC4CHEMD](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/BC4CHEMD-IOBES) | [BC5CDR](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/BC5CDR-IOBES) | [NCBI-disease](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/NCBI-disease-IOBES) |
 | ------------- |-------------| -----| -----| -----|
 | Dataset Benchmark | - | 88.06 | 86.76 | 82.90 |
-| [Crichton et al. 2016](https://github.com/cambridgeltl/MTL-Bioinformatics-2016) | 73.17 | 83.02 | 83.90 | 80.37 |
-| [Lample et al. 2016](https://github.com/glample/tagger) | 80.51 | 87.74 | 86.92 | 85.80 |
-| [Ma and Hovy 2016](https://github.com/XuezheMax/LasagneNLP) | 78.48 | 86.84 | 86.65 | 82.62 |
-| [Liu et al. 2018](https://github.com/LiyuanLucasLiu/LM-LSTM-CRF) | 80.00 | 88.75 | 86.96 | 83.92 |
-| **DTranNER** | **83.32** | **90.25** | **89.80** | **86.68** |
+| [Lample et al. 2016](https://github.com/glample/tagger) | 78.91 | 88.07 | 86.68 | 84.40 |
+| [Ma and Hovy 2016](https://github.com/XuezheMax/LasagneNLP) | 78.08 | 85.31 | 85.74 | 83.49 |
+| [Collabonet 2018](https://github.com/wonjininfo/CollaboNet) | 79.73 | 88.85 | - | 86.36 |
+| [Wang et al. 2018](https://github.com/yuzhimanhua/Multi-BioNER) | 80.33 | 89.44 | 88.77 | 85.99 |
+| **DTranNER** | **83.12** | **90.35** | **89.80** | **86.61** |
 
 
 ## Contact
