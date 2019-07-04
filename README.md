@@ -4,6 +4,13 @@
 
 **DTranNER** is a deep-learning-based method suited for biomedical named entity recognition that obtains state-of-the-art performance in NER on the four biomedical benchmark corpora (BC2GM, BC4CHEMD, BC5CDR, and NCBI-Diesease). **DTranNER** equips with deep learning-based label-label transition model to describe ever-changing contextual relations between neighboring labels.
 
+## Links
+
+- [Installation](#installation)
+- [Datasets](#datasets)
+- [Usage](#usage)
+- [Benchmarks](#benchmarks)
+
 ## Updates
 *   **(3 July 2019)** A new version of **DTranNER** is now available. It is entirely renewed, based on PyTorch, with providing significant performance improvements over the scores on the submitted manuscript.
 
