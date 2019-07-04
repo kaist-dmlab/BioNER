@@ -6,7 +6,7 @@
 
 ## Links
 
-- [Installation](#installation)
+- [Initial Setup](#initial-setup)
 - [Datasets](#datasets)
 - [Usage](#usage)
 - [Benchmarks](#benchmarks)
@@ -14,7 +14,7 @@
 ## Updates
 *   **(3 July 2019)** A new version of **DTranNER** is now available. It is entirely renewed, based on PyTorch, with providing significant performance improvements over the scores on the submitted manuscript.
 
-## Initial setup
+## Initial Setup
 
 To use **DTranNER**, you are required to set up a python3-based environment with packages such as pytorch v1.1.0, numpy, spacy, gensim, and etc. Please refer to the ```requirement.txt```
 
@@ -49,6 +49,19 @@ We use biomedical corpora collected by Crichton et al. The dataset is publicly a
 
 ## Tagging Scheme
 In this study, we use IOBES tagging scheme. `O` denotes non-entity token, `B` denotes the first token of such an entity consisting of multiple tokens, `I` denotes the inside token of the entity, `E` denotes the last token, and `S` denotes a single-token-based entity. We are conducting experiments with IOB tagging scheme at this moment. It will be reposed soon.
+
+## Benchmarks
+
+Here we compare our model with recent state-of-the-art models on the four biomedical corpora mentioned above. We use F1 score as the evaluation metric.
+
+|Model | [BC2GM](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/BC2GM-IOBES) | [BC4CHEMD](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/BC4CHEMD-IOBES) | [BC5CDR](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/BC5CDR-IOBES) | [NCBI-disease](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/NCBI-disease-IOBES) |
+| ------------- |-------------| -----| -----| -----|
+| Dataset Benchmark | - | 88.06 | 86.76 | 82.90 |
+| [Crichton et al. 2016](https://github.com/cambridgeltl/MTL-Bioinformatics-2016) | 73.17 | 83.02 | 83.90 | 80.37 |
+| [Lample et al. 2016](https://github.com/glample/tagger) | 80.51 | 87.74 | 86.92 | 85.80 |
+| [Ma and Hovy 2016](https://github.com/XuezheMax/LasagneNLP) | 78.48 | 86.84 | 86.65 | 82.62 |
+| [Liu et al. 2018](https://github.com/LiyuanLucasLiu/LM-LSTM-CRF) | 80.00 | 88.75 | 86.96 | 83.92 |
+| **DTranNER** | **83.32** | **90.25** | **89.80** | **86.68** |
 
 ## Contact
 Please post a Github issue or contact skhong831@kaist.ac.kr if you have any questions.
