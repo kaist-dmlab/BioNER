@@ -64,14 +64,13 @@ In this study, we use IOBES tagging scheme. `O` denotes non-entity token, `B` de
 
 Here we compare our model with recent state-of-the-art models on the four biomedical corpora mentioned above. We use F1 score as the evaluation metric.
 
-|Model | [BC2GM](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/BC2GM-IOBES) | [BC4CHEMD](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/BC4CHEMD-IOBES) | [BC5CDR](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/BC5CDR-IOBES) | [NCBI-disease](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/NCBI-disease-IOBES) |
-| ------------- |-------------| -----| -----| -----|
-| Dataset Benchmark | - | 88.06 | 86.76 | 82.90 |
-| [Lample et al. 2016](https://github.com/glample/tagger) | 78.91 | 88.07 | 86.68 | 84.40 |
-| [Ma and Hovy 2016](https://github.com/XuezheMax/LasagneNLP) | 78.08 | 85.31 | 85.74 | 83.49 |
-| [Collabonet 2018](https://github.com/wonjininfo/CollaboNet) | 79.73 | 88.85 | - | 86.36 |
-| [Wang et al. 2018](https://github.com/yuzhimanhua/Multi-BioNER) | 80.33 | 89.44 | 88.77 | 85.99 |
-| **DTranNER** | **83.12** | **90.35** | **89.80** | **86.61** |
+|Model | [BC2GM](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/BC2GM-IOBES) | [BC4CHEMD](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/BC4CHEMD-IOBES) | [BC5CDR](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/BC5CDR-IOBES) | [NCBI-disease](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/NCBI-disease-IOBES) | [NCBI-disease](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/NCBI-disease-IOBES) | [JNLPBA](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/JNLPBA-IOBES) |
+| ------------- |-------------| -----| -----| -----| ---------|
+| [Lample et al. 2016](https://github.com/glample/tagger) | 78.91 | 88.07 | 86.68 | 84.40 | 73.48 |
+| [Ma and Hovy 2016](https://github.com/XuezheMax/LasagneNLP) | 78.08 | 85.31 | 85.74 | 83.49 | 72.68 |
+| [Collabonet 2018](https://github.com/wonjininfo/CollaboNet) | 79.73 | 88.85 | - | 86.36 | **77.39** |
+| [Wang et al. 2018](https://github.com/yuzhimanhua/Multi-BioNER) | 80.33 | 89.44 | 88.77 | 85.99 | 73.52 |
+| **DTranNER** | **83.12** | **90.35** | **89.80** | **86.61** | 75.87 |
 
 
 ## Contact
