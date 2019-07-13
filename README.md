@@ -62,7 +62,7 @@ In this study, we use IOBES tagging scheme. `O` denotes non-entity token, `B` de
 
 ## Benchmarks
 
-Here we compare our model with recent state-of-the-art models on the four biomedical corpora mentioned above. We use F1 score as the evaluation metric.
+Here we compare our model with recent state-of-the-art models on the four biomedical corpora mentioned above. We use F1 score as the evaluation metric. Recently, contextualized word embeddings via language modeling such as ELMo, BERT have been emerged. so we conducted additional experiments solely with **ELMo** https://arxiv.org/abs/1802.05365, so getting rid of the word embedding and the character model. The model is denoted as DTranNER_elmo, whose experimental results are shown in below the table.
 
 |Model | [BC2GM](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/BC2GM-IOBES) | [BC4CHEMD](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/BC4CHEMD-IOBES) | [BC5CDR](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/BC5CDR-IOBES) | [NCBI-disease](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/NCBI-disease-IOBES) | [JNLPBA](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/JNLPBA-IOBES) |
 | ------------- |-------------| -----| -----| -----| -----|
@@ -71,6 +71,7 @@ Here we compare our model with recent state-of-the-art models on the four biomed
 | [Collabonet 2018](https://github.com/wonjininfo/CollaboNet) | 79.73 | 88.85 | - | 86.36 | **77.39** |
 | [Wang et al. 2018](https://github.com/yuzhimanhua/Multi-BioNER) | 80.33 | 89.44 | 88.77 | 85.99 | 73.52 |
 | **DTranNER** | **83.12** | **90.35** | **89.80** | **86.61** | 76.02 |
+| **DTranNER_elmo** | **84.37** | **91.64** | **90.78** | **90.57** | **77.55** |
 
 
 ## Contact
