@@ -71,7 +71,7 @@ Here we compare our model with recent state-of-the-art models on the four biomed
 | [Collabonet 2018](https://github.com/wonjininfo/CollaboNet) | 79.73 | 88.85 | - | 86.36 | 77.39 |
 | [Wang et al. 2018](https://github.com/yuzhimanhua/Multi-BioNER) | 80.33 | 89.44 | 88.77 | 85.99 | 73.52 |
 | DTranNER | 83.12 | 90.35 | 89.80 | 86.61 | 76.02 |
-| **DTranNER_elmo** | **84.37** | **91.64** | **90.78** | **90.57** | **77.55** |
+| **DTranNER_elmo** | **84.37** | **91.64** | **90.57** | **87.70** | **77.55** |
 
 
 ## Contact
