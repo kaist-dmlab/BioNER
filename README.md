@@ -66,7 +66,7 @@ In this study, we use IOBES tagging scheme. `O` denotes non-entity token, `B` de
 Here we compare our model with recent state-of-the-art models on the five biomedical corpora mentioned above. We measure F1 score as the evaluation metric. The experimental results are shown in below the table.
 
 |Model | [BC2GM](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/BC2GM-IOBES) | [BC4CHEMD](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/BC4CHEMD-IOBES) | [BC5CDR-Disease](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/BC5CDR-disease-IOBES) | [BC5CDR-Chemical](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/BC5CDR-chem-IOBES) | [NCBI-disease](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/NCBI-disease-IOBES)|
-| ------------- |-------------| -----| -----| -----| -----| --------|
+| ------------- |-------------| -----| -----| -----| -----|
 | [Collabonet 2018](https://github.com/wonjininfo/CollaboNet) | 79.73 | 88.85 | - | 86.36 | 77.39 |
 | [Wang et al. 2018](https://github.com/yuzhimanhua/Multi-BioNER) | 80.33 | 89.44 | 88.77 | 85.99 | 73.52 |
 | DTranNER | **83.12** | **90.35** | **89.80** | **86.61** | **76.02** |
