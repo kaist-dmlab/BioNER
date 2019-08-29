@@ -15,7 +15,7 @@
 
 
 ## Updates
-*   **(3 July 2019)** A new version of **DTranNER** is now available. It is entirely renewed, based on PyTorch, with providing significant performance improvements over the scores on the submitted manuscript.
+*   **(29 August 2019)** A new version of **DTranNER** is now available. It is entirely renewed, based on PyTorch, with providing significant performance improvements over the scores on the submitted manuscript.
 
 
 ## Initial Setup
