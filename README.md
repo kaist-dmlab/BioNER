@@ -2,7 +2,7 @@
 
 ## Biomedical Named Entity Recognizer
 
-**DTranNER** is a deep-learning-based method suited for biomedical named entity recognition that obtains state-of-the-art performance in NER on the four biomedical benchmark corpora (BC2GM, BC4CHEMD, BC5CDR, and NCBI-Diesease). **DTranNER** equips with deep learning-based label-label transition model to describe ever-changing contextual relations between neighboring labels.
+**DTranNER** is a deep-learning-based method suited for biomedical named entity recognition that obtains state-of-the-art performance in NER on the five biomedical benchmark corpora (BC2GM, BC4CHEMD, BC5CDR-disease, BC5CDR-chemical, and NCBI-Diesease). **DTranNER** equips with deep learning-based label-label transition model to describe ever-changing contextual relations between neighboring labels.
 
 
 ## Links
@@ -36,7 +36,7 @@ For model training, we recommend using GPU.
 ```
 python train.py \
     --DTranNER
-    --dataset_name ['BC5CDR','BC2GM','BC4CHEMD',or 'NCBI-disease'] \
+    --dataset_name ['BC5CDR-disease','BC5CDR-chem','BC2GM','BC4CHEMD',or 'NCBI-disease'] \
     --hidden_dim [e.g., 500] \
     --pp_hidden_dim [e.g., 500] \
     --bilinear_dim [e.g., 500] \
@@ -49,6 +49,7 @@ You can change the arguments as you want.
 ## Download Word Embedding
 We initialize the word embedding matrix with the pre-trained word vectors from Pyysalo et al., 2013. These word vectors are
 obtained from [here](http://evexdb.org/pmresources/vec-space-models/). They were trained using the PubMed abstracts, PubMed Central (PMC), and a Wikipedia dump. 
+Recently, contextualized word embeddings have been emerged. We incorporated **ELMo** https://arxiv.org/abs/1802.05365 into our token embedding layer.
 
 
 ## Datasets 
@@ -62,16 +63,13 @@ In this study, we use IOBES tagging scheme. `O` denotes non-entity token, `B` de
 
 ## Benchmarks
 
-Here we compare our model with recent state-of-the-art models on the four biomedical corpora mentioned above. We use F1 score as the evaluation metric. Recently, contextualized word embeddings via language modeling such as ELMo, BERT have been emerged. so we conducted additional experiments solely with **ELMo** https://arxiv.org/abs/1802.05365, so getting rid of the word embedding and the character model. The model is denoted as DTranNER_elmo, whose experimental results are shown in below the table.
+Here we compare our model with recent state-of-the-art models on the five biomedical corpora mentioned above. We measure F1 score as the evaluation metric. The experimental results are shown in below the table.
 
-|Model | [BC2GM](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/BC2GM-IOBES) | [BC4CHEMD](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/BC4CHEMD-IOBES) | [BC5CDR](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/BC5CDR-IOBES) | [NCBI-disease](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/NCBI-disease-IOBES) | [JNLPBA](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/JNLPBA-IOBES) |
-| ------------- |-------------| -----| -----| -----| -----|
-| [Lample et al. 2016](https://github.com/glample/tagger) | 78.91 | 88.07 | 86.68 | 84.40 | 73.48 |
-| [Ma and Hovy 2016](https://github.com/XuezheMax/LasagneNLP) | 78.08 | 85.31 | 85.74 | 83.49 | 72.68 |
+|Model | [BC2GM](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/BC2GM-IOBES) | [BC4CHEMD](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/BC4CHEMD-IOBES) | [BC5CDR-chem](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/BC5CDR-chem-IOBES) | [BC5CDR-disease](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/BC5CDR-disease-IOBES) | [NCBI-disease](https://github.com/cambridgeltl/MTL-Bioinformatics-2016/tree/master/data/NCBI-disease-IOBES)
+| ------------- |-------------| -----| -----| -----| -----| --------|
 | [Collabonet 2018](https://github.com/wonjininfo/CollaboNet) | 79.73 | 88.85 | - | 86.36 | 77.39 |
 | [Wang et al. 2018](https://github.com/yuzhimanhua/Multi-BioNER) | 80.33 | 89.44 | 88.77 | 85.99 | 73.52 |
-| DTranNER | 83.12 | 90.35 | 89.80 | 86.61 | 76.02 |
-| **DTranNER_elmo** | **84.37** | **91.64** | **90.57** | **87.70** | **77.55** |
+| DTranNER | **83.12** | **90.35** | **89.80** | **86.61** | **76.02** |
 
 
 ## Contact
