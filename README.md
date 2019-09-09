@@ -20,7 +20,7 @@
 
 ## Initial Setup
 
-To use **DTranNER**, you are required to set up a python3-based environment with packages such as pytorch v1.1.0, numpy, spacy, gensim, and etc. Please refer to the ```requirement.txt```
+To use **DTranNER**, you are required to set up a python3-based environment with packages such as pytorch v1.1.0, numpy, and gensim.
 
 
 ## Usage
