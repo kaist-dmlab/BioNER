@@ -75,7 +75,6 @@ msgpack-numpy==0.4.4.2
 murmurhash==1.0.2
 nbconvert==5.5.0
 nbformat==4.4.0
-nltk==3.4.1
 nmslib==1.8.1
 notebook==5.7.8
 numpy==1.16.3
@@ -111,7 +110,6 @@ pytest==4.6.2
 python-dateutil==2.8.0
 pytorch-pretrained-bert==0.6.2
 pytz==2019.1
-PyYAML==3.13
 pyzmq==18.0.0
 qtconsole==4.4.4
 regex==2019.6.5
@@ -127,7 +125,6 @@ Send2Trash==1.5.0
 six==1.12.0
 smart-open==1.8.4
 snowballstemmer==1.2.1
-spacy==2.1.4
 Sphinx==2.1.0
 sphinxcontrib-applehelp==1.0.1
 sphinxcontrib-devhelp==1.0.1
