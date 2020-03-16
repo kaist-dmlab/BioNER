@@ -76,4 +76,4 @@ Here we compare our model with recent state-of-the-art models on the five biomed
 
 
 ## Contact
-Please post a Github issue or contact skhong831@kaist.ac.kr if you have any questions.
+Please post a Github issue or contact skhong831@kaist.ac.kr or skhong0831@gmail.com if you have any questions.
