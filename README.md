@@ -2,7 +2,7 @@
 
 ## Biomedical Named Entity Recognizer
 
-**DTranNER** is a deep-learning-based method suited for biomedical named entity recognition that obtains state-of-the-art performance in NER on the five biomedical benchmark corpora (BC2GM, BC4CHEMD, BC5CDR-disease, BC5CDR-chemical, and NCBI-Diesease). **DTranNER** equips with deep learning-based label-label transition model to describe ever-changing contextual relations between neighboring labels.
+**DTranNER** is a deep-learning-based method suited for biomedical named entity recognition that obtains state-of-the-art performance in NER on the five biomedical benchmark corpora (BC2GM, BC4CHEMD, BC5CDR-disease, BC5CDR-chemical, and NCBI-Diesease). **DTranNER** equips with deep learning-based label-label transition model to describe ever-changing contextual relations between neighboring labels. Please refer to our paper [DTranNER: biomedical named entity recognition with deep learning-based label-label transition model](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-3393-1) for more details.
 
 
 ## Links
