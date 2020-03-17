@@ -71,8 +71,9 @@ Here we compare our model with recent state-of-the-art models on the five biomed
 | [D3NER 2018](https://github.com/trangnm58/D3NER) | - | - | 93.14 | 84.68 | 84.41 |
 | [Collabonet 2018](https://github.com/wonjininfo/CollaboNet) | 79.73 | 88.85 | 93.31 | 84.08 | 86.36 |
 | [Wang et al. 2018](https://github.com/yuzhimanhua/Multi-BioNER) | 80.74 | 89.37 | 93.03 | 84.95 | 86.14 |
-| [BioBERT 2019](https://github.com/dmis-lab/biobert) | 84.40 | 91.41 | 93.44 | 86.56 | **89.36** |
-| DTranNER | **84.56** | **91.99** | **94.16** | **87.22** | 88.62 |
+| [BioBERT v1.0](https://github.com/dmis-lab/biobert) | 84.40 | 91.41 | 93.44 | 86.56 | 89.36 |
+| [BioBERT v1.1](https://github.com/dmis-lab/biobert) | **84.72** | **92.36** | 93.47 | 87.15 | **89.71** |
+| DTranNER | 84.56 | 91.99 | **94.16** | **87.22** | 88.62 |
 
 
 ## Contact
