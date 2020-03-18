@@ -58,7 +58,7 @@ We use biomedical corpora collected by Crichton et al. The dataset is publicly a
 
 
 ## Tagging Scheme
-In this study, we use IOBES tagging scheme. `O` denotes non-entity token, `B` denotes the first token of such an entity consisting of multiple tokens, `I` denotes the inside token of the entity, `E` denotes the last token, and `S` denotes a single-token-based entity. We are conducting experiments with IOB tagging scheme at this moment. It will be reposed soon.
+In this study, we use IOBES tagging scheme. `O` denotes non-entity token, `B` denotes the first token of such an entity consisting of multiple tokens, `I` denotes the inside token of the entity, `E` denotes the last token, and `S` denotes a single-token-based entity. We are conducting experiments with IOB tagging scheme at this moment. It will be reported soon.
 
 
 ## Benchmarks
